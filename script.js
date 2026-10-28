@@ -152,11 +152,11 @@ document.querySelectorAll('.activity-modal').forEach(dialog => {
 
 const eventDialog = document.querySelector('#event-details-dialog');
 const eventDetails = {
-  fitness: { title: 'Online Fitness Challenge', image: 'program-online-fitness.png', description: 'Virtual challenges and guided training to keep you moving.' },
-  camp: { title: 'Youth Sports Camp — 20yo', image: 'program-youth-camp.png', description: 'Coach & Trainer · Solid Community · Team Uniform' },
-  obstacle: { title: 'Obstacle Course Race', image: 'program-obstacle-race.png', description: 'Take on the course and challenge your strength, balance, and endurance.' },
-  game: { title: 'Sport x Game Day', image: 'program-game-day.png', description: 'Get together for friendly games and shared time on the court.' },
-  trainer: { title: 'Trainer Meet & Greet', image: 'program-trainer-meet.png', description: 'Meet the coaches and connect with the sports community.' }
+  fitness: { title: 'Online Fitness Challenge', image: 'program-online-fitness.avif', description: 'Virtual challenges and guided training to keep you moving.' },
+  camp: { title: 'Youth Sports Camp — 20yo', image: 'program-youth-camp.avif', description: 'Coach & Trainer · Solid Community · Team Uniform' },
+  obstacle: { title: 'Obstacle Course Race', image: 'program-obstacle-race.avif', description: 'Take on the course and challenge your strength, balance, and endurance.' },
+  game: { title: 'Sport x Game Day', image: 'program-game-day.avif', description: 'Get together for friendly games and shared time on the court.' },
+  trainer: { title: 'Trainer Meet & Greet', image: 'program-trainer-meet.avif', description: 'Meet the coaches and connect with the sports community.' }
 };
 const eventButtons = [...document.querySelectorAll('[data-event]')];
 const eventList = document.querySelector('.events-list');
@@ -185,7 +185,7 @@ let eventPointerPosition = null;
 function loadEventPreview(key) {
   if (!eventPreviewLoads.has(key)) {
     const image = new Image();
-    image.src = `assets/${key === 'camp' ? 'events-tennis-rest.png' : eventDetails[key].image}`;
+    image.src = `assets/${key === 'camp' ? 'events-tennis-rest.avif' : eventDetails[key].image}`;
     eventPreviewLoads.set(key, image.decode().then(() => image).catch(() => {
       eventPreviewLoads.delete(key);
       return null;

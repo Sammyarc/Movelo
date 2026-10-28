@@ -52,9 +52,9 @@ button:focus-visible, a:focus-visible { outline: 3px solid #fff; outline-offset:
 /* The artwork spans the page. Only the typography has a 1400px limit. */
 .page { width: 100%; }
 .hero { position: relative; isolation: isolate; width: 100%; aspect-ratio: 1100 / 688; overflow: hidden; background: #08738e; }
-.hero-photo { position: absolute; inset: 0; z-index: -2; background: url("assets/hero-court-v2.png") center / 100% 100% no-repeat; }
+.hero-photo { position: absolute; inset: 0; z-index: -2; background: url("assets/hero-court-v2.avif") center / 100% 100% no-repeat; }
 .hero-shadow { display: none; position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; pointer-events: none; transform-origin: 72.773% 52.834%; }
-.hero.has-pointer-scene .hero-photo { background-image: url("assets/hero-court-clean.png"); }
+.hero.has-pointer-scene .hero-photo { background-image: url("assets/hero-court-clean.avif"); }
 .hero.has-pointer-scene .hero-shadow { display: block; }
 /* A continuous scrim preserves the photo without adding boxes behind text. */
 .hero::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: rgb(0 18 26 / 43%); }
