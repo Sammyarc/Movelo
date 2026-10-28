@@ -1,0 +1,16 @@
+/* Stationary hit targets and gentle photographic depth. */
+#testimonial-count { font-variant-numeric: tabular-nums; }
+@media (prefers-reduced-motion: no-preference) {
+  .quote-nav-button { transition: background-color 200ms ease, transform 160ms ease; }
+  .quote-nav-button:active { transform: scale(.94); }
+  .quote-nav-button svg, .session-details-button svg { transition: transform 320ms cubic-bezier(.22, 1, .36, 1); }
+  .quote-next:is(:hover, :focus-visible) svg { transform: translateX(3px); }
+  .quote-prev:is(:hover, :focus-visible) svg { transform: translateX(-3px); }
+  .session-details-button:is(:hover, :focus-visible) svg { transform: translate(3px, -3px); }
+  .session-details-button { transition: background-color 200ms ease, scale 160ms ease; }
+  .session-details-button:active { scale: .95; }
+  .single-session-photo { transition: scale 750ms cubic-bezier(.22, 1, .36, 1); }
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .single-session-card:hover .single-session-photo { scale: 1.035; }
+}

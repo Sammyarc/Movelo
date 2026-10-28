@@ -1,0 +1,15 @@
+/* Footer motion keeps every link and the original typographic composition in place. */
+.footer-wordmark [data-footer-motion] { pointer-events: none; }
+@media (prefers-reduced-motion: no-preference) {
+  .footer-explore-card > img { transition: scale 700ms cubic-bezier(.22, 1, .36, 1); }
+  .footer-explore-arrow svg { transition: transform 350ms cubic-bezier(.22, 1, .36, 1); }
+  .footer-explore-card:is(:hover, :focus-visible) > img { scale: 1.045; }
+  .footer-explore-card:is(:hover, :focus-visible) .footer-explore-arrow svg { transform: translate(2px, -2px); }
+  .footer-top-link { position: relative; transition: background-color 200ms ease; }
+  .footer-top-link::after { content: ""; position: absolute; inset: 7px; border: 1px solid rgb(255 255 255 / 60%); border-radius: inherit; opacity: 0; scale: .82; transition: opacity 250ms ease, scale 450ms cubic-bezier(.22, 1, .36, 1); pointer-events: none; }
+  .footer-top-link:is(:hover, :focus-visible)::after { opacity: 1; scale: 1; }
+  .footer-nav :is(a, button) { position: relative; }
+  .footer-nav :is(a, button)::after { content: ""; position: absolute; left: 0; right: 0; bottom: 2px; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: right; transition: transform 300ms cubic-bezier(.22, 1, .36, 1); }
+  .footer-nav :is(a, button):is(:hover, :focus-visible) { text-decoration: none; }
+  .footer-nav :is(a, button):is(:hover, :focus-visible)::after { transform: scaleX(1); transform-origin: left; }
+}
