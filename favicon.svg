@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Movelo</title>
+  <rect width="64" height="64" rx="16" fill="#075368"/>
+  <path d="M8 44V22h6v3c2-2.6 4.6-3.8 7.7-3.8 3.5 0 6 1.5 7.2 4.3 2-2.9 4.8-4.3 8.4-4.3 5.8 0 8.8 3.4 8.8 9.5V44h-6.5V31c0-3.2-1.3-4.7-3.8-4.7-3.1 0-5 2.2-5 5.8V44h-6.5V31c0-3.2-1.3-4.7-3.8-4.7-3.1 0-5 2.2-5 5.8V44Z" fill="#fff"/>
+  <circle cx="47" cy="18" r="10" fill="#ff6b24"/>
+  <path d="M37.5 18h19M47 8c-4 5.2-4 14.8 0 20M47 8c4 5.2 4 14.8 0 20" fill="none" stroke="#143847" stroke-width="1.7"/>
+</svg>
